@@ -1,0 +1,84 @@
+.meetVideoContainer {
+    position : relative;
+    height : 100vh;
+    background : rgb(1, 4, 48);
+}
+
+.meetUserVideo {
+    position : absolute;
+    bottom : 10vh;
+    height : 20vh;
+    width : auto;
+    left : 0;
+    border-radius : 20px;
+}
+
+.buttonContainers {
+    position : absolute;
+    width : 100vw;
+    bottom : 0;
+    text-align : center;
+}
+
+.buttonContainers svg {
+    font-size : 3rem;
+}
+
+.conferenceView {
+    display : flex;
+    padding : 10px;
+    gap : 10px;
+}
+
+.conferenceView > video {
+    width : 40vh;
+    height : 20vh;
+    min-width : 30vw;
+    border-radius : 10px;
+}
+
+.chatRoom {
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    width: 30vw;
+
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* This is the main vertical layout */
+.chatContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat heading */
+.chatContainer h1 {
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 20px;
+}
+
+/* Input bar pinned to bottom */
+.chattingArea {
+    margin-top: auto;              /* 👈 pushes it to bottom */
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    background: #ffffff;
+}
+
+/* Make TextField expand */
+.chattingArea :global(.MuiTextField-root) {
+    flex: 1;
+}
